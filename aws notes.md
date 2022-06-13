@@ -136,3 +136,109 @@ Analytics, application integration, ar and vr, aws cost management, blockchain, 
 =====
 
 =====
+## Services available to us
+Nav bar -> products -> compute. 
+Also features has info available
+Will be doing lots of pricing
+Documentation is on the bottom of the page for their features/products
+
+======
+
+======
+## Evolution of Computing
+Dedicated -> VMs -> Containers -> Functions
+
+Dedicated:
+* A physical server is wholly utilized by a single customer
+* You'll have to guess your capacity
+* You'll overpay for an underutilized server
+* You can't vertically scale, you need a manual migration
+* Replacing a server is very difficult
+* You are limited by your Host Operating System
+* Multiple apps can result in conflicts in resource sharing (Multiple app usage is **bad practice**)
+* You have a *guarantee of security, privacy, and full utility of underlying resources*
+
+VMs:
+* You can run multiple VMs on one machine
+* Hypervisor is the software layer that let's you run the VMs
+* A physical server shared by multiple customers
+* You pay for a fraction of the server
+* You'll overpay for an underutilized VM
+* You are limited by your Guest's Operating System
+* Multiple apps on a single VM can result in conflicts in resource sharing
+* Easy to export or import images for migration
+* Easy to vertically/horizontally scale
+
+Containers:
+* VM running multiple containers
+* Docker Deamon is the name of the software layer that let's you run multiple containers (think of Docker)
+* You can maximize the available capacity which is more cost effective
+* Your containers share the same underlying OS so containers are more efficient than multiple VMs
+* Multiple apps can run side-by-side without being limited to the same OS requirements and will not cause conflicts during resource sharing
+
+Functions:
+* Are managed VMs running managed containers
+* Known as *serverless computing*
+* You upload a piece of code, choose the amount of memory and duration
+* Only responsible for code and data, nothing else
+* Very cost-effective, only pay for the time code is running, VMs only run when there is code to be executed
+* Cold starts is a side effect of this setup (think Heroku or Netlify) 
+
+======
+
+======
+## Types of Cloud Computing
+
+**SaaS** - Software as a Service (For Customers):
+* A product that is run and managed by the service provider (Salesforce, Gmail, Office365)
+* No need to worry about how the service is maintained. It just works and remains available
+
+**PaaS** - Platform as a Service (For Devs):
+* Focus on the deployment and management of your apps (Elastic Beanstalk, Git, Heroku, Google App Engine)
+* Provisioning, configuring, hardware and OS are all taken care of by the platform
+
+**IaaS** - Infrastructure as a Service (For Admins):
+* The basic building blocks for cloud IT. Provides access to networking features, computers, and data storage space. (Azure, AWS, Oracle Cloud)
+* IT staff, data centers, and hardware are all taken care of
+======
+
+======
+## Cloud Computing Deployment Models
+
+Public Cloud:
+Everything (the workload or project) is built on the CSP (aka Cloud-native or Cloud First)
+
+Private cloud:
+Everything built on the company's data centers
+Also known as on-premise
+The cloud could be open stack
+
+Hybrid cloud:
+Using both on-premise
+and
+a CSP
+
+Cross-Cloud (Multi cloud):
+Using multiple cloud providers (eg Azure Arc and Anthos), AWS is usually not cross-cloud friendly
+
+======
+
+======
+## Cloud Computing Deployment Models
+
+Cloud:
+* Fully utilizing Cloud Computing
+Companies that are starting out today or are small enough to make the leap from a VPS to a CSP (startups, SaaS offerings, New projects and companies)
+
+Hybrid:
+* Using both cloud and on-premise
+Organizations that started with their own datacenter, can't fully move to the cloud due to effort of migration of security compliance (Banks, FinTech, Large professional Service Providers, Legacy on-premise)
+
+On-Premise:
+* Deploying resources on-premises, using virtualization and resouce management tools is sometimes called "private cloud" (Canadian government, AIG, hospitals)
+
+* Orgs can't run on cloud due to strict regulatory compliance or the sheer size of their org (ie, public sector aka government, sensitive data [think hospitals], insurance companies)
+
+======
+
+======
